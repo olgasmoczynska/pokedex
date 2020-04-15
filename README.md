@@ -10,13 +10,13 @@
 Pokédex is an application that retrieves data on all Pokémons and allows sorting by type.
 
 ## Technologies
-The application was built in plain JavaScript and is powered by [PokéAPI](https://pokeapi.co) - the RESTful Pokémon API.
+The app was built in plain JavaScript and is powered by [PokéAPI](https://pokeapi.co) - the RESTful Pokémon API.
 
 ## Live Preview
 Try it [here](https://olgasmoczynska.github.io/pokedex/public)!
 
 ## Setup
-Run the following commands in the project directory:
+To launch the app, run the following commands in the project directory:
 ### `npm install`
 ### `npm start`
 The application will open automatically in your browser.
