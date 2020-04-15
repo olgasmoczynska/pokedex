@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: rgb(63, 94, 251);
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(255, 255, 0, 1) 25%, rgba(5, 193, 255, 1) 50%, rgba(255, 8, 218, 1) 100%);
+    font-family: 'Baloo Tammudu 2', cursive;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding: 40px;
+    width: 1000px;
+}
+
+.card {
+    background-color: rgba(250, 250, 250, 0.5);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.card-title {
+    text-transform: uppercase;
+}
+
+.pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.buttons {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.button {
+    background-color: rgba(250, 250, 250, 0.5);
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.buttons-previous {
+    margin-right: 20px;
+}
+
+.button:hover {
+    background-color: white;
+}
+
+legend {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.filter {
+    background-color: rgba(250, 250, 250, 0.5);
+    padding: 0 20px;
+    border-radius: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 40px 40px 0
+}
+
+.loader {
+    border: 16px solid rgba(250, 250, 250, 0.5);
+    border-top: 16px solid #fff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+    margin: calc(50vh - 100px) auto;
+    display: none;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    input[type=radio] {
+        display: block;
+        margin: 0 auto;
+    }
+
+    label {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .filter {
+        text-align: center;
+    }
+}

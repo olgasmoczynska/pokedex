@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pokedex</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu+2&display=swap&subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <ul id="pokedex" class="pokedex">
+    </ul>
+    <div class="loader"></div>
+  </div>
+  <nav class="nav">
+    <div class="buttons">
+      <div class="button buttons-previous" onclick="previous()"><i class="fas fa-angle-left"></i></div>
+      <div class="button buttons-next" onclick="next()"><i class="fas fa-angle-right"></i></div>
+    </div>
+    <div class="filter">
+      <legend>Filter by type</legend>
+      <label>
+        <input type="radio" name="type" value="all"> All
+      </label><br>
+      <label>
+        <input type="radio" name="type" value="normal"> Normal
+      </label><br>
+      <label>
+        <input type="radio" name="type" value="fighting"> Fighting
+      </label><br>
+      <label>
+        <input type="radio" name="type" value="flying"> Flying
+      </label><br>
+      <label>
+        <input type="radio" name="type" value="poison"> Poison
+      </label><br>
+      <label>
+        <input type="radio" name="type" value="ground"> Ground
+      </label><br>
+      <label>
+        <input type="radio" name="type" value="rock"> Rock
+      </label><br>
+      <label>
+        <input type="radio" name="type" value="bug"> Bug
+      </label><br>
+      <label>
+        <input type="radio" name="type" value="ghost"> Ghost
+      </label><br>
+      <label>
+        <input type="radio" name="type" value="steel"> Steel
+      </label><br>
+      <label>
+        <input type="radio" name="type" value="fire"> Fire
+      </label><br>
+      <label>
+        <input type="radio" name="type" value="water"> Water
+      </label><br>
+      <label>
+        <input type="radio" name="type" value="grass"> Grass
+      </label><br>
+      <label>
+        <input type="radio" name="type" value="electric"> Electric
+      </label><br>
+      <label>
+        <input type="radio" name="type" value="psychic"> Psychic
+      </label><br>
+      <label>
+        <input type="radio" name="type" value="ice"> Ice
+      </label><br>
+      <label>
+        <input type="radio" name="type" value="dragon"> Dragon
+      </label><br>
+      <label>
+        <input type="radio" name="type" value="dark"> Dark
+      </label><br>
+      <label>
+        <input type="radio" name="type" value="fairy"> Fairy
+      </label><br>
+    </div>
+  </nav>
+  <script src="javascripts/pokemon.js"></script>
+</body>
+
+</html>
