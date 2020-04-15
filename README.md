@@ -7,7 +7,7 @@
 * [Setup](#setup)
 
 ## General Info
-Pokédex is an application that retrieves data on all Pokémons and allows sorting by type.
+Pokédex is an application that retrieves data on all Pokémons. They can then be browsed by type.
 
 ## Technologies
 The app was built in plain JavaScript and is powered by [PokéAPI](https://pokeapi.co) - the RESTful Pokémon API.
